@@ -1,0 +1,382 @@
+/* Section */
+
+
+.section_light {
+    background-color: var(--color-bg-medium);
+}
+
+.section__wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 100px 24px;
+}
+
+/* Button */
+
+.button {
+    color: var(--color-text);
+    background: none;
+    border: 1px solid black;
+    padding: 16px 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    border-radius: var(--border-10);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #ffffff;
+    border: 1px solid grey;
+}
+
+.button_primary {
+    background: var(--color-primary);
+}
+
+.button_primary:hover {
+    background: var(--color-primary-hover);
+}
+
+.button_ghost {
+    border: solid 1px var(--color-stroke);
+}
+
+.button_ghost:hover {
+    background: var(--color-bg-light);
+}
+
+.button__contact {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.button__contact:hover {
+    background: var(--color-bg-light);
+}
+
+@media (max-width: 640px) {
+    .button {
+        padding: 12px 32px;
+    }
+}
+
+
+/* Social */
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.social-icons__icons {
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-8);
+    text-decoration: none;
+    padding: 11px;
+}
+
+.social-icons__icons:hover {
+    background-color: var(--color-bg-medium);
+}
+
+/* Icons */
+
+.icon-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Headling*/
+
+.headling {
+    margin-bottom: 32px;
+}
+
+.headling__top {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.headling__bottom {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--color-text);
+    margin: 0 0 32px 0;
+}
+
+@media (max-width: 860) {
+    .headling__bottom {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 120%;
+    }
+}
+
+/* Paragraph */
+
+.paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-text);
+    max-width: 787px;
+}
+
+.paragraph_32 {
+    margin-bottom: 32px;
+}
+
+/* Card */
+
+.card {
+    background: var(--color-bg-medium);
+    border-radius: var(--border-10);
+}
+
+.card_light {
+    background: var(--color-bg-light);
+}
+
+.card__32 {
+    padding: 32px;
+}
+
+.card__48x24 {
+    padding: 48px 24px;
+}
+
+.card__24x32 {
+    padding: 24px 32px;
+}
+
+/* Post */
+
+.post_wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 48px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.post__button a {
+    display: block
+}
+
+.post__stats {
+    display: flex;
+    gap: 32px;
+}
+
+.post__stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-link-hover);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.post__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.post__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.post__description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-text);
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post__header {
+        font-size: 21px;
+    }
+}
+
+/* chip */
+
+.chip {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-text);
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-10);
+    padding: 8px 16px;
+    background: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.chip:hover {
+    background: var(--color-bg-medium);
+}
+
+.chip_active {
+    background: var(--color-primary);
+    border: none;
+}
+
+.chip_active:hover {
+    background: var(--color-primary-hover);
+}
+
+.course-card {
+    background: var(--color-bg-medium);
+    border-radius: var(--border-10);
+    color: var(--color-text);
+}
+
+/* Tag */
+
+.tag {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-text);
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-17);
+    padding: 6px 12px 6px 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+/* Course cards */
+
+.course-card__cover img {
+    width: 100%;
+    border-radius: var(--border-10) var(--border-10) 0 0;
+}
+
+.course-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 4px;
+}
+
+.course-card__author {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-link-hover);
+}
+
+.course-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+.course-card__tags {
+    display: flex;
+    gap: 12px;
+}
+
+.course-card__footer {
+    background: var(--color-bg-light);
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    border-radius: 0 0 var(--border-10) var(--border-10);
+
+}
+
+/* Contact form */
+
+form {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /*
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #719472;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
