@@ -143,4 +143,8 @@
         margin-bottom: 3px;
     }
 
+    .menu__item button {
+        margin: 0 auto;
+    }
+
 }
