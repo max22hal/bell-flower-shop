@@ -380,3 +380,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+/* Success indicator */
+
+.success {
+    color: green;
+    background: none;
+    border: none;
+    padding: 16px 32px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+}

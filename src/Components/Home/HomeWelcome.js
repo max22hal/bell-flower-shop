@@ -37,10 +37,10 @@ const HomeWelcome = (props) => {
                                 My name is Daria and I am a floral designer.
                             </p>
                             <p>
-                                Flowers are my passion and I am delighter to share it with you. Every arrangement I create
+                                Flowers are my passion and I am delighted to share it with you. Every arrangement I create
                                 is
                                 filled
-                                with warmth and atention to your wishes.
+                                with warmth and attention to your wishes.
                             </p>
                             <p>
                                 I also host workshops where we create beauty together.
