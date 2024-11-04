@@ -1,6 +1,6 @@
 import React from "react";
 import styles from '../../styles/header.module.css';
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import HeaderLogo from './HeaderLogo';
 import HeaderMenu from "./HeaderMenu";
 

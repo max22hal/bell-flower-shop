@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+import React from "react";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 
 const HomeAboutMe = (props) => {

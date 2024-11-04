@@ -1,6 +1,6 @@
-import React, { forwardRef, useState, useRef } from "react";
+import React, { forwardRef, useState } from "react";
 import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import WreathPic from "../../images/Wreath.JPEG";
 import UpcomingWorkshop from "../WorkShops/UpcomingWorkshop";

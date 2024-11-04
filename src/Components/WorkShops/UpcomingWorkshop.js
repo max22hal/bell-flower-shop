@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+import React from "react";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import RnGWreathPic from "../../images/Cristmas_wreath_red_and_gold.JPEG";
 import WreathWithOranges from "../../images/Wreath_with_oranges.JPEG";

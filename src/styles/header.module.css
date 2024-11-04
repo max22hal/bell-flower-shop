@@ -99,6 +99,37 @@
 
 }
 
+.menu__item button {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 120%;
+    color: var(--color-menu-text);
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+.menu__item:hover button {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-link-hover);
+    cursor: pointer;
+}
+
+.menu__item_active button {
+    color: var(--color-link-hover);
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-8);
+
+}
+
 @media (max-width: 960px) {
     .menu {
         display: block;

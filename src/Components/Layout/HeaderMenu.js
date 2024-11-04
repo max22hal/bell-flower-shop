@@ -1,6 +1,7 @@
 import React from "react";
 import stylesHeader from "../../styles/header.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+
+
 
 
 const HeaderMenu = (props) => {
@@ -14,37 +15,37 @@ const HeaderMenu = (props) => {
             <nav className={stylesHeader.menu}>
                 <li>
                     <li className={classes.join(' ')} >
-                        <a href="#">Home</a>
+                        <button>Home</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("weddingFlowers")}>
-                        <a href="#">Wedding flowers</a>
+                        <button>Wedding flowers</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("eventFlowers")}>
-                        <a href="#">Event flowers</a>
+                        <button>Event flowers</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("weddingSubscription")}>
-                        <a href="#">Wedding subscription</a>
+                        <button>Wedding subscription</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("flowerSubscription")}>
-                        <a href="#">Flower subscription</a>
+                        <button>Flower subscription</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("workshops")}>
-                        <a href="#">Workshops</a>
+                        <button>Workshops</button>
                     </li>
                 </li>
                 <li>
                     <li className={stylesHeader.menu__item} onClick={() => props.onScroll("contacts")}>
-                        <a href="#">Contacts</a>
+                        <button>Contacts</button>
                     </li>
                 </li>
 

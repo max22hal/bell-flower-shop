@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
-import stylesPage from "../../styles/page.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
+//import stylesPage from "../../styles/page.module.css";
 import emailjs from '@emailjs/browser';
 
 function EmailForm(props) {

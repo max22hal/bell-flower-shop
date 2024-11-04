@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
-import stylesPage from "../../styles/page.module.css";
-import WeddingFlowersPic from "../../images/WeddingFlowers.JPG"
-
+import React from "react";
 
 const WeddingFlowersDetails = (props, ref) => {
 

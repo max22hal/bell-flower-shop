@@ -1,7 +1,7 @@
 import React from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
-import stylesPage from "../../styles/page.module.css";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
+//import stylesPage from "../../styles/page.module.css";
 import HomeWelcome from "./HomeWelcome";
 import HomePrincipals from "./HomePrincipals";
 

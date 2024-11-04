@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import DariaPic from "../../images/Daria.png";
 import HomeAboutMe from "./HomeAboutMe";
@@ -18,7 +18,7 @@ const HomeWelcome = (props) => {
         <React.Fragment>
             <div className={stylesPage.home__welcome_wrapper}>
                 <div className={stylesPage.home__welcome}>
-                    <img className={stylesPage.home__pic} src={DariaPic} alt="Daria photo" />
+                    <img className={stylesPage.home__pic} src={DariaPic} alt="Daria" />
                     <div className={stylesPage.welcome__content}>
                         <h1 className={stylesPage.home__header}>
                             Welcome

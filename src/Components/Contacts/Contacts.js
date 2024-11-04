@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import Instagram from "../../images/instagram-new-2016-seeklogo.png";
 import Telegram from "../../images/telegram.svg";

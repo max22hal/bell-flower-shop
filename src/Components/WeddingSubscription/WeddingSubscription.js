@@ -1,6 +1,6 @@
 import React, { forwardRef, useState } from "react";
 import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import WeddingSubscriptionPic from "../../images/WeddingSubscription.JPG"
 import WeddingSubscriptionDetails from "./WeddingSubscriptionDetails";
@@ -19,7 +19,7 @@ const WeddingSubscription = forwardRef((props, ref) => {
             <div className={stylesPage.section}>
                 <h2 className={stylesPage.section__header}>Wedding Subscription</h2>
                 <div className={stylesPage.section__content}>
-                    <img className={stylesPage.section__pic} src={WeddingSubscriptionPic} alt="Wedding subscription picture" ></img>
+                    <img className={stylesPage.section__pic} src={WeddingSubscriptionPic} alt="Wedding subscription bouquet" ></img>
                     <div>
                         <p>
                             A wedding subscription is the perfect way to extend the joy and magic of your special day for weeks to come.

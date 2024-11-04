@@ -1,9 +1,9 @@
-import React, { forwardRef, useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+import React, { forwardRef } from "react";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import WeddingFlowersPic from "../../images/WeddingFlowers.JPG"
-import WeddingFlowersDetails from "./WeddingFlowersDetails";
+//import WeddingFlowersDetails from "./WeddingFlowersDetails";
 
 
 const WeddingFlowers = forwardRef((props, ref) => {
@@ -22,7 +22,7 @@ const WeddingFlowers = forwardRef((props, ref) => {
             <div className={stylesPage.section}>
                 <h2 className={stylesPage.section__header}>Wedding Flowers</h2>
                 <div className={stylesPage.section__content}>
-                    <img className={stylesPage.section__pic} src={WeddingFlowersPic} alt="Wedding flowers picture" ></img>
+                    <img className={stylesPage.section__pic} src={WeddingFlowersPic} alt="Wedding flowers bouquet" ></img>
                     <div>
                         <p>
                             I specialize in creating stunning wedding decor that feels personal, sophisticated, and timeless.

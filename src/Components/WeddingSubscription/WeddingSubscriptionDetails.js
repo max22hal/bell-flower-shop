@@ -1,6 +1,6 @@
-import React, { forwardRef, useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+import React from "react";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import WedSubsBouquet_1_pic from "../../images/WedSubsBouquet_1.JPG"
 import WedSubsBouquet_2_pic from "../../images/WedBouquet_2.JPEG";

@@ -1,6 +1,6 @@
-import React, { forwardRef, useState } from "react";
-import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+import React from "react";
+//import stylesComponents from "../../styles/components.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import Bouquet_S from "../../images/Bouquet_S.JPEG";
 import Bouquet_M from "../../images/Bouquet_M.JPEG";
@@ -65,7 +65,7 @@ const FlowerSubscriptionDetails = (props) => {
                         </p>
                     </div>
                     <div>
-                        <img className={stylesPage.section_more__pic} src={Bouquet_S} alt="Bouquet on a grey background"></img>
+                        <img className={stylesPage.section_more__pic} src={Bouquet_L} alt="Bouquet on a grey background"></img>
                     </div>
                 </div>
 

@@ -8,6 +8,8 @@ import WeddingSubscription from './Components/WeddingSubscription/WeddingSubscri
 import FlowerSubscription from './Components/FlowerSubscription/FlowerSubscription';
 import Contacts from './Components/Contacts/Contacts';
 import WorkShops from './Components/WorkShops/WorkShops';
+// eslint-disable-next-line
+import stylesGlobal from "./styles/global.module.css";
 
 function App() {
 
@@ -20,8 +22,6 @@ function App() {
     contacts: useRef(null),
     workshops: useRef(null),
   }
-
-
 
   const scrollToSection = (sectionName) => {
     sectionRefs[sectionName]?.current?.scrollIntoView({ behavior: "smooth" });

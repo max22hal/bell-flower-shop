@@ -1,6 +1,6 @@
 import React, { forwardRef, useState } from "react";
 import stylesComponents from "../../styles/components.module.css";
-import stylesGlobal from "../../styles/global.module.css";
+//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import FlowerSubscriptionPic from "../../images/FlowerSubscription.JPEG"
 import FlowerSubscriptionDetails from "./FlowerSubscriptionDetails";
@@ -42,7 +42,7 @@ const FlowerSubscription = forwardRef((props, ref) => {
                         </button>
                     </div>
 
-                    <img className={stylesPage.section__pic} src={FlowerSubscriptionPic} alt="Flower subscription picture" ></img>
+                    <img className={stylesPage.section__pic} src={FlowerSubscriptionPic} alt="Flower subscription bouquet" ></img>
 
                 </div>
 
