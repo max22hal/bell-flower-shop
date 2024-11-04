@@ -1,18 +1,16 @@
-import React from "react";
-//import stylesComponents from "../../styles/components.module.css";
-//import stylesGlobal from "../../styles/global.module.css";
+import React, { forwardRef } from "react";
 import stylesPage from "../../styles/page.module.css";
 import RnGWreathPic from "../../images/Cristmas_wreath_red_and_gold.JPEG";
 import WreathWithOranges from "../../images/Wreath_with_oranges.JPEG";
 import EmailForm from "../Forms/EmailForm";
 
-const UpcomingWorkshop = (props) => {
+const UpcomingWorkshop = forwardRef((props, ref) => {
 
     const wrapperStyles = [stylesPage.section_more__wrapper, stylesPage.wreath_details];
 
 
     return (
-        <div className={wrapperStyles.join(' ')}>
+        <div className={wrapperStyles.join(' ')} ref={ref}>
             <div className={stylesPage.section_more}>
                 <p className={stylesPage.section_more__intro}>
                     We invite you to a cozy Christmas wreath workshop where you can create your very own festive wreath and embrace the holiday spirit! In a warm, decorated setting with Christmas music and twinkling lights, you will be surrounded by a creative atmosphere and like-minded people!
@@ -71,6 +69,6 @@ const UpcomingWorkshop = (props) => {
             </div>
         </div>
     );
-}
+});
 
 export default UpcomingWorkshop;

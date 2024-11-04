@@ -1,13 +1,11 @@
-import React from "react";
-//import stylesComponents from "../../styles/components.module.css";
-//import stylesGlobal from "../../styles/global.module.css";
+import React, { forwardRef } from "react";
 import stylesPage from "../../styles/page.module.css";
 import WedSubsBouquet_1_pic from "../../images/WedSubsBouquet_1.JPG"
 import WedSubsBouquet_2_pic from "../../images/WedBouquet_2.JPEG";
 
-const WeddingSubscriptionDetails = (props) => {
+const WeddingSubscriptionDetails = forwardRef((props, ref) => {
     return (
-        <div className={stylesPage.section_more__wrapper}>
+        <div className={stylesPage.section_more__wrapper} ref={ref}>
             <div className={stylesPage.section_more}>
                 <p className={stylesPage.section_more__intro}>
                     Instead of traditonal flowers on your wedding day your guests come together to give you a more lasting and heartfelt gift - a contribution to a fund that will fill your home with fresh bouquets, reminding you of the joyfull moments of your day again and again long after the celebration has ended!
@@ -119,6 +117,6 @@ const WeddingSubscriptionDetails = (props) => {
             </div>
         </div>
     )
-}
+});
 
 export default WeddingSubscriptionDetails;

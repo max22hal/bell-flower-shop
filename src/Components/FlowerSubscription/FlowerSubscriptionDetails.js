@@ -1,15 +1,13 @@
-import React from "react";
-//import stylesComponents from "../../styles/components.module.css";
-//import stylesGlobal from "../../styles/global.module.css";
+import React, { forwardRef } from "react";
 import stylesPage from "../../styles/page.module.css";
 import Bouquet_S from "../../images/Bouquet_S.JPEG";
 import Bouquet_M from "../../images/Bouquet_M.JPEG";
 import Bouquet_L from "../../images/Bouquet_L.JPEG";
 
 
-const FlowerSubscriptionDetails = (props) => {
+const FlowerSubscriptionDetails = forwardRef((props, ref) => {
     return (
-        <div className={stylesPage.section_more__wrapper}>
+        <div className={stylesPage.section_more__wrapper} ref={ref}>
             <div className={stylesPage.section_more}>
                 <p className={stylesPage.section_more__intro}>
                     A flower subscription means four unique bouquets each month, delivered right to your door at your preferred time. Each bouquet is thoughtfully crafted to match the season and selected color palette, bringing a fresh burst of life into your home!
@@ -89,6 +87,6 @@ const FlowerSubscriptionDetails = (props) => {
             </div>
         </div >
     )
-}
+});
 
 export default FlowerSubscriptionDetails;

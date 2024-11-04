@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import stylesComponents from "../../styles/components.module.css";
-//import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
 import DariaPic from "../../images/Daria.png";
 import HomeAboutMe from "./HomeAboutMe";
@@ -9,9 +8,19 @@ const HomeWelcome = (props) => {
 
     const [isAboutMeVisible, setIsAboutMeVisible] = useState(false);
 
-    // Функция для изменения состояния (отображать/скрывать компонент)
-    const toggleVisibility = () => {
+    const aboutMeRef = useRef(null);
+
+    const handleAboutMeClick = () => {
+
         setIsAboutMeVisible(!isAboutMeVisible); // Инвертируем значение состояния
+
+        // Используем setTimeout, чтобы дождаться отображения элемента перед прокруткой
+        setTimeout(() => {
+            // Скроллим к элементу, если он существует
+            aboutMeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }, 0);
+
     };
 
     return (
@@ -42,7 +51,7 @@ const HomeWelcome = (props) => {
                                 you
                                 happines and comfort!
                             </p>
-                            <button className={stylesComponents.button} onClick={toggleVisibility}>
+                            <button className={stylesComponents.button} onClick={handleAboutMeClick}>
                                 About me
                             </button>
 
@@ -51,7 +60,7 @@ const HomeWelcome = (props) => {
                     </div>
 
                 </div>
-                {isAboutMeVisible && <HomeAboutMe />}
+                {isAboutMeVisible && <HomeAboutMe ref={aboutMeRef} />}
 
             </div>
         </React.Fragment>

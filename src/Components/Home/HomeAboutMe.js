@@ -1,12 +1,10 @@
-import React from "react";
-//import stylesComponents from "../../styles/components.module.css";
-//import stylesGlobal from "../../styles/global.module.css";
+import React, { forwardRef } from "react";
 import stylesPage from "../../styles/page.module.css";
 
-const HomeAboutMe = (props) => {
+const HomeAboutMe = forwardRef((props, ref) => {
     const aboutMeStyles = [stylesPage.home__welcome, stylesPage.home__aboutMe]
     return (
-        <div className={aboutMeStyles.join(' ')}>
+        <div className={aboutMeStyles.join(' ')} ref={ref}>
             <div className={stylesPage.home__text}>
                 <p>
                     My love for weddings and beauty led me to the profession of a floral decorator. Since childhood, I have been captivated by flowers and how they can transform any space, whether it is a grand castle or a cozy home. For me, weddings are the perfect blend of aesthetics and romance, and flowers have always been the highlight of any celebration.
@@ -26,6 +24,6 @@ const HomeAboutMe = (props) => {
             </div>
         </div>
     )
-}
+});
 
 export default HomeAboutMe;

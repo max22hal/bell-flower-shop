@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useState, useRef } from "react";
 import stylesComponents from "../../styles/components.module.css";
 //import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
@@ -9,9 +9,19 @@ const WeddingSubscription = forwardRef((props, ref) => {
 
     const [isWedSubsDetaisVisible, setIsWedSubsDetaisVisible] = useState(false);
 
-    // Функция для изменения состояния (отображать/скрывать компонент)
-    const toggleVisibility = () => {
+    const moreRef = useRef(null);
+
+    const handleMoreClick = () => {
+
         setIsWedSubsDetaisVisible(!isWedSubsDetaisVisible); // Инвертируем значение состояния
+
+        // Используем setTimeout, чтобы дождаться отображения элемента перед прокруткой
+        setTimeout(() => {
+            // Скроллим к элементу, если он существует
+            moreRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }, 0);
+
     };
 
     return (
@@ -37,14 +47,14 @@ const WeddingSubscription = forwardRef((props, ref) => {
                         <p>
                             It’s a wonderful way to relive the emotions of your big day, over and over again!
                         </p>
-                        <button className={stylesComponents.button} onClick={toggleVisibility}>
+                        <button className={stylesComponents.button} onClick={handleMoreClick}>
                             More
                         </button>
                     </div>
                 </div>
 
             </div>
-            {isWedSubsDetaisVisible && <WeddingSubscriptionDetails />}
+            {isWedSubsDetaisVisible && <WeddingSubscriptionDetails ref={moreRef} />}
         </div>
     );
 });

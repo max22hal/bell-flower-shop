@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useState, useRef } from "react";
 import stylesComponents from "../../styles/components.module.css";
 //import stylesGlobal from "../../styles/global.module.css";
 import stylesPage from "../../styles/page.module.css";
@@ -9,6 +9,21 @@ import FlowerSubscriptionDetails from "./FlowerSubscriptionDetails";
 const FlowerSubscription = forwardRef((props, ref) => {
 
     const [isFlwrSubsDetaisVisible, setIsFlwrSubsDetaisVisible] = useState(false);
+
+    const moreRef = useRef(null);
+
+    const handleMoreClick = () => {
+
+        toggleVisibility() // Инвертируем значение состояния
+
+        // Используем setTimeout, чтобы дождаться отображения элемента перед прокруткой
+        setTimeout(() => {
+            // Скроллим к элементу, если он существует
+            moreRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }, 0);
+
+    };
 
     // Функция для изменения состояния (отображать/скрывать компонент)
     const toggleVisibility = () => {
@@ -37,7 +52,7 @@ const FlowerSubscription = forwardRef((props, ref) => {
                         <p>
                             Fresh flowers delivered conveniently to you—bringing beauty, comfort, and joy to your life every day!
                         </p>
-                        <button className={stylesComponents.button} onClick={toggleVisibility}>
+                        <button className={stylesComponents.button} onClick={handleMoreClick}>
                             More
                         </button>
                     </div>
@@ -50,7 +65,7 @@ const FlowerSubscription = forwardRef((props, ref) => {
             </div>
 
 
-            {isFlwrSubsDetaisVisible && <FlowerSubscriptionDetails />}
+            {isFlwrSubsDetaisVisible && <FlowerSubscriptionDetails ref={moreRef} />}
         </div>
     );
 });
