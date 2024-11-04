@@ -6,7 +6,7 @@ import stylesHeader from "../../styles/header.module.css";
 
 const HeaderMenu = (props) => {
 
-    const classes = [stylesHeader.menu__item, stylesHeader.menu__item_active];
+    //const classes = [stylesHeader.menu__item, stylesHeader.menu__item_active];
 
 
     return (
