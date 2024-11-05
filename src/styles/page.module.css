@@ -56,8 +56,8 @@
     color: var(--color-text);
     gap: 50px;
     padding-top: 25px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .home__pic {
@@ -85,6 +85,12 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .home__aboutMe {
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
     .welcome__content {

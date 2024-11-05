@@ -35,8 +35,8 @@ function EmailForm(props) {
 
 
         emailjs
-            .sendForm('service_fngyc99', 'template_ebqkppi', form.current, {
-                publicKey: 'kvVXM2JQriZpxXAqo',
+            .sendForm('service_0ua3tch', 'template_0uztaob', form.current, {
+                publicKey: 'h2Ar2ihfrFvdBoQl4',
             })
             .then(
                 () => {
