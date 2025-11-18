@@ -31,7 +31,7 @@ const UpcomingWorkshop = forwardRef((props, ref) => {
                                 Christmas music and decor that will set a festive, cozy mood.
                             </li>
                             <li>
-                                Hot Christmas drinks and delicious snacks, included in the price.
+                                Hot Christmas drinks and delicious sweets.
                             </li>
                         </ul>
                         <h3>
@@ -40,13 +40,18 @@ const UpcomingWorkshop = forwardRef((props, ref) => {
 
                         <ul>
                             <li>
-                                <strong>Date & Time:</strong> December 8th, starting at 3:00 PM
+                                <strong>Date & Time:</strong> December 7th, starting at 4:00 PM
+                            </li>
+                            <li className={stylesPage.masterclass_location}>
+                                <strong>Location:</strong> Utrecht,
+                                <a href="https://maps.app.goo.gl/2xWuX9xiHGbWhZBR9" target="_blank" rel="noopener noreferrer">
+                                    <div>
+                                        Cafe Ddadi
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <strong>Location:</strong> Utrecht
-                            </li>
-                            <li>
-                                <strong>Cost:</strong> €50 (includes all materials, drinks, and snacks)
+                                <strong>Cost:</strong> €50 (excluding drinks and food)
                             </li>
 
                         </ul>
